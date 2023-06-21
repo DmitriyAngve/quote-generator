@@ -1,5 +1,15 @@
-import { GradientBackground } from "@/components/QuoteGenerator/QuoteGeneratorElements";
 import Head from "next/head";
+
+// Components
+import {
+  BackgroundImage1,
+  BackgroundImage2,
+  GradientBackground,
+} from "@/components/QuoteGenerator/QuoteGeneratorElements";
+
+// Assets
+import Clouds1 from "@/assets/cloud-and-thunder.png";
+import Clouds2 from "@/assets/cloudy-weather.png";
 
 export default function Home() {
   return (
@@ -11,7 +21,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Background */}
-      <GradientBackground></GradientBackground>
+      <GradientBackground>
+        <BackgroundImage1 src={Clouds1} height="300" alt="cloudybackground1" />
+        <BackgroundImage2 src={Clouds2} height="300" alt="cloudybackground2" />
+      </GradientBackground>
     </>
   );
 }
