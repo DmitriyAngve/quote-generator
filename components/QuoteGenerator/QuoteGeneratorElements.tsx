@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
-
 import Link from "next/link";
-
 import Image from "next/image";
 
 export const GradientBackground = styled.div`
