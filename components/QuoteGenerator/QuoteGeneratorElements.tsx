@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 
-export const GradientBackground = styled.div`
+export const GradientBackgroundCon = styled.div`
   background: linear-gradient(to right, #000046, #1cb5e0);
   background-size: 400% 400%;
   animation: gradient 6s ease infinite;

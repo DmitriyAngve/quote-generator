@@ -5,7 +5,7 @@ import {
   BackgroundImage1,
   BackgroundImage2,
   FooterCon,
-  GradientBackground,
+  GradientBackgroundCon,
   FooterLink,
   RedSpan,
   QuoteGeneratorCon,
@@ -34,7 +34,7 @@ export default function Home() {
       </Head>
 
       {/* Background */}
-      <GradientBackground>
+      <GradientBackgroundCon>
         {/* Quote Generator Modal Pop-Up */}
         {/* <QuoteGeneratorModal /> */}
 
@@ -46,7 +46,7 @@ export default function Home() {
             </QuoteGeneratorTitle>
             <QuotegeneratorSubTitle>
               Looking for a splash of inspiration? Generate a quote card with a
-              random inspirational quote provided by
+              random inspirational quote provided by{" "}
               <FooterLink
                 href="https://zenquotes.io/"
                 target="_blank"
@@ -84,7 +84,7 @@ export default function Home() {
             </FooterLink>
           </>
         </FooterCon>
-      </GradientBackground>
+      </GradientBackgroundCon>
     </>
   );
 }
