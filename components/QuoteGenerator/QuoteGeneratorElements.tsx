@@ -49,6 +49,7 @@ export const FooterCon = styled.div`
 
 export const FooterLink = styled(Link)`
   color: white;
+  text-decoration: none;
 `;
 
 export const RedSpan = styled.span`
@@ -57,5 +58,4 @@ export const RedSpan = styled.span`
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  animation: gradient 2s ease infinite;
 `;

@@ -36,7 +36,7 @@ export default function Home() {
           <>
             Quotes Generated: {numberOfQuotes}
             <br />
-            Develope with <RedSpan>♥</RedSpan> by{" "}
+            Developed with <RedSpan>♥</RedSpan> by{" "}
             <FooterLink
               href="https://github.com/DmitriyAngve"
               target="_blank"
