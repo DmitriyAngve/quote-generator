@@ -5,18 +5,19 @@
 # Query - speak to lambda
 # Lambda function (код определяет GraphQL схему с операцией запроса generateAQoute, которая требует публичного доступа и вызывает лямба-функцию с опеределенным имененем)
 type Query {
-  generateAQoute(input: AWSJSON!): String
+  generateAQuote(input: AWSJSON!): String
     @auth(rules: [{ allow: public, provider: iam }])
     @function(name: "inspoquoteLambda-${env}")
 }
 
-# Public Data (определяем модель данных для приложения, которая будет иметь публичный доступ для операции чтения)
-type QuoteAppTest
+# Public Data
+type QuoteAppData
   @model
   @auth(rules: [{ allow: public, provider: iam, operations: [read] }]) {
   id: ID!
   queryName: String!
-  quoteGenerated: Int!
+    @index(name: "QuotesQueryName", queryField: "quotesQueryName")
+  quotesGenerated: Int!
   createdAt: String!
   updatedAt: String!
 }
