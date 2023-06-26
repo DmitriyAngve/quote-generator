@@ -88,3 +88,4 @@ export default function Home() {
     </>
   );
 }
+// https://eu-north-1.console.aws.amazon.com/console/home?region=eu-north-1#
