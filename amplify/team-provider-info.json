@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "quotegeneratord5d5c59c": {}
+      },
+      "function": {
+        "inspoquoteLambda": {}
       }
     }
   }
