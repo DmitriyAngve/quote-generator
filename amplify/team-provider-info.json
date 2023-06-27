@@ -16,7 +16,13 @@
         "quotegeneratord5d5c59c": {}
       },
       "function": {
-        "inspoquoteLambda": {}
+        "inspoquoteLambda": {
+          "deploymentBucketName": "amplify-quotegenerator-dev-164417-deployment",
+          "s3Key": "amplify-builds/inspoquoteLambda-313467574d7947396b79-build.zip"
+        }
+      },
+      "api": {
+        "quotegenerator": {}
       }
     }
   }
