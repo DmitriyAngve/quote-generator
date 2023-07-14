@@ -18,7 +18,9 @@ import {
 
 // Assets
 import Clouds1 from "@/assets/cloud-and-thunder.png";
+
 import Clouds2 from "@/assets/cloudy-weather.png";
+
 import { useState } from "react";
 
 export default function Home() {
