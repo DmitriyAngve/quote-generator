@@ -22,6 +22,11 @@ import Clouds1 from "@/assets/cloud-and-thunder.png";
 import Clouds2 from "@/assets/cloudy-weather.png";
 import { useState } from "react";
 
+// interface for DynamoDB object
+interface UpdateQuoteInfoData {}
+
+// type guard for fetch function
+
 export default function Home() {
   const [numberOfQuotes, setNumberOfQuotes] = useState<Number | null>(0);
 
